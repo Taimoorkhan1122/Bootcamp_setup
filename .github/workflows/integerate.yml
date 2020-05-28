@@ -1,4 +1,5 @@
 name: bootcamp continous CI
+
 on: [push]
 
 jobs:
@@ -8,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install node.js
-      - uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v2-beta
         with:
           node-version: 12
       - name: Install Surge
