@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     name: Deployment using surge
     steps:
       - uses: actions/checkout@v2
@@ -11,9 +11,9 @@ jobs:
       - uses: actions/setup-node@v2-beta
         with:
           node-version: 12
-      - name: install Surge
+      - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surg ./ bootcamp_setup_taimoorkhan.surge.sh token ${{secrets.BOOTCAMP_SETUP_SECRET}}
+        run: surg ./ bootcamp_setup_taimoorkhan.surge.sh --token ${{secrets.BOOTCAMP_SETUP_SECRET}}
 
 
