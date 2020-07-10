@@ -25,6 +25,8 @@
                     }
                     else{
                         console.log("failed")
+                        console.log(anHttpRequest.response)
+                        console.log(anHttpRequest.responseURL)
                         aCallback(anHttpRequest.responseText);
                     }
                 }
