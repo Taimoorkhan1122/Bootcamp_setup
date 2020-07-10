@@ -26,6 +26,7 @@
         }
         // request function
         var client = new HttpClient();
+        client.setRequestHeader("Authorization", "/");
         client.get('https://add-it-rust.herokuapp.com/', function (response) {
             console.log()
         });
