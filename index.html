@@ -10,7 +10,7 @@
     <p>Testing github tracking system</p>
     <h1>Another push to bootcamp repo done!✌</h1>
     <p>example commit again </p>
-    <h1>With no null value added header</h1>
+    <h1>With no null value added header 3</h1>
     <script>
         var HttpClient = function () {
             this.get = function (aUrl, aCallback) {
@@ -20,13 +20,15 @@
                         aCallback(anHttpRequest.responseText);
                 }
 
+
                 anHttpRequest.open("GET", aUrl, true);
+                anHttpRequest.setRequestHeader("Authorization", "/");
                 anHttpRequest.send();
             }
         }
         // request function
         var client = new HttpClient();
-        client.setRequestHeader("Authorization", "/");
+        
         client.get('https://add-it-rust.herokuapp.com/', function (response) {
             console.log()
         });
