@@ -15,6 +15,6 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./build bootcamp_setup_taimoorkhan.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build bootcamp_setup_taimoorkhan.surge.sh --token ${{secrets.BOOTCAMP_SETUP_SECRET}}
 
 
