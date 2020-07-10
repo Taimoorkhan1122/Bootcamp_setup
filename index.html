@@ -18,6 +18,8 @@
                 anHttpRequest.onreadystatechange = function () {
                     if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200){
                         document.write("succes", anHttpRequest.responseText)
+                        document.write("succes1", anHttpRequest.responseXML)
+                        document.write("succes2", anHttpRequest.response)
                         aCallback(anHttpRequest.responseText);
 
                     }
