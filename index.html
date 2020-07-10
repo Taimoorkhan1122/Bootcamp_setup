@@ -10,5 +10,24 @@
     <p>Testing github tracking system</p>
     <h1>Another push to bootcamp repo done!✌</h1>
     <p>example commit again </p>
+    <script>
+        var HttpClient = function () {
+            this.get = function (aUrl, aCallback) {
+                var anHttpRequest = new XMLHttpRequest();
+                anHttpRequest.onreadystatechange = function () {
+                    if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                        aCallback(anHttpRequest.responseText);
+                }
+
+                anHttpRequest.open("GET", aUrl, true);
+                anHttpRequest.send(null);
+            }
+        }
+        // request function
+        var client = new HttpClient();
+        client.get('http://localhost:8080', function (response) {
+            console.log()
+        });
+    </script>
 </body>
 </html>
