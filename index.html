@@ -6,43 +6,7 @@
     <title>Bootcamp 2020</title>
 </head>
 <body>
-    <h1>Website deployed using github actions</h1>
-    <p>Testing github tracking system</p>
-    <h1>Another push to bootcamp repo done!✌</h1>
-    <p>example commit again </p>
-    <h1>With no null value added header 9</h1>
-    <script>
-        var HttpClient = function () {
-            this.get = function (aUrl, aCallback) {
-                var anHttpRequest = new XMLHttpRequest();
-                anHttpRequest.onreadystatechange = function () {
-                    if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200){
-                        document.write("succes", anHttpRequest.responseText)
-                        document.write("succes1", anHttpRequest.responseXML)
-                        document.write("succes2", anHttpRequest.response)
-                        aCallback(anHttpRequest.responseText);
-
-                    }
-                    else{
-                        console.log("failed")
-                        console.log(anHttpRequest.response)
-                        console.log(anHttpRequest.responseURL)
-                        aCallback(anHttpRequest.responseText);
-                    }
-                }
-
-
-                anHttpRequest.open("GET", aUrl, true);
-                anHttpRequest.setRequestHeader("Authorization", "/");
-                // anHttpRequest.send();
-            }
-        }
-        // request function
-        var client = new HttpClient();
-        
-        client.get('https://add-it-rust.herokuapp.com/', function (response) {
-            console.log("this is response: ", response)
-        });
-    </script>
+    <h1>Started following bootcamp at 26 July 2020</h1>
+    <h2>And it's raining today</h2>
 </body>
 </html>
